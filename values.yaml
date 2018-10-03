@@ -1,8 +1,8 @@
-replicas: 3
+replicas: 1
 
 image:
   repository: microsoft/vsts-agent
-  tag: latest
+  tag: ubuntu-16.04
   pullPolicy: Always
 
 resources:
@@ -10,7 +10,7 @@ resources:
     cpu: 4
     memory: 8Gi
   requests:
-    cpu: 4
-    memory: 8Gi
-  disk: "50Gi"
+    cpu: 0.1
+    memory: 0.1
+  disk: "30Gi"
   storageclass: "default"
